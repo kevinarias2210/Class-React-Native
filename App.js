@@ -1,17 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native';
-import LoginForm from './src/components/LoginForm';
-import Saludar from './src/components/Saludar';
+import { StyleSheet} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'
+import NavigationStack from './src/navigation/NavigationStack';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>React Native</Text>
+    <NavigationContainer>
+      <NavigationStack />
+    </NavigationContainer>
 
-      {/* <LoginForm /> */}
-      {/* <Saludar /> */}
-      <Saludar firstname="Juan" lastname="Cart"/>
-      <Saludar firstname="Daniela" lastname="Alvez"/>
-    </View>
+    
   );
 }
 

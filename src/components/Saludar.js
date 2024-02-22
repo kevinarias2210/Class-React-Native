@@ -12,10 +12,10 @@ export default function Saludar(props){
     )
 }
 
-/* Saludar.defaultProps = {
+Saludar.defaultProps = {
     firstname: "Kevin", 
     lastname: "Arias"
-}; */
+};
 
 Saludar.propTypes = {
     firstname: PropTypes.string.isRequired,
