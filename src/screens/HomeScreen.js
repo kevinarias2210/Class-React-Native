@@ -1,5 +1,7 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, SafeAreaView } from "react-native";/*El 
+SafeAreaView sirve para que no se ponga debajo del Note de los teléfonos
+*/
 
 export default function HomeScreen (props) {
     const { navigation } = props;
@@ -10,12 +12,12 @@ export default function HomeScreen (props) {
     }
 
     return(
-        <View>
+        <SafeAreaView>
             <Text>Estamos en HomeScreen</Text>
             <Text>Estamos en HomeScreen</Text>
             <Text>Estamos en HomeScreen</Text>
             <Text>Estamos en HomeScreen</Text>
             <Button onPress={goToSettings} title="Ir a Settings" />
-        </View>
+        </SafeAreaView>
     )
 }
